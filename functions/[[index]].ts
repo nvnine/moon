@@ -83,7 +83,11 @@ export async function onRequest({
 }: {
   request: Request;
 }): Promise<Response> {
-  return await handleRequest(request);
+  try {
+    return await handleRequest(request);
+  } catch (e: any) {
+    return new Response(e.stack);
+  }
 }
 
 export default {
