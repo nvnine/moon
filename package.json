@@ -1,5 +1,5 @@
 {
-  "name": "@nvnine/rolling",
+  "name": "@nvnine/moon",
   "version": "0.1.0",
   "devDependencies": {
     "@cloudflare/workers-types": "^3.16.0",
@@ -10,5 +10,6 @@
   "scripts": {
     "start": "wrangler dev",
     "deploy": "wrangler publish"
-  }
+  },
+  "packageManager": "yarn@3.2.3"
 }
