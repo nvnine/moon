@@ -42,8 +42,8 @@ const fromHexString = (hexString: string): Uint8Array =>
 export interface Env {}
 
 async function handleRequest(request: Request): Promise<Response> {
-  const imageType = ["jpg", "jpeg", "png", "webp", "gif", "avif"].find((ext) =>
-    request.url.includes(ext)
+  const imageType = ["jpg", "jpeg", "png", "webp", "gif", "svg", "avif"].find(
+    (ext) => request.url.includes(ext)
   );
   const userAgent = request.headers.get("user-agent");
   if (userAgent === DISCORD_EMBED_UA && imageType) {
