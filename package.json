@@ -8,8 +8,7 @@
   },
   "private": true,
   "scripts": {
-    "start": "wrangler dev",
-    "deploy": "wrangler publish"
+    "start": "wrangler dev"
   },
   "packageManager": "yarn@3.2.3"
 }

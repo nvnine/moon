@@ -48,7 +48,6 @@ async function handleRequest(request: Request): Promise<Response> {
     request.url.includes(ext)
   );
   const userAgent = request.headers.get("user-agent");
-  ˇ;
   if (
     (userAgent === DISCORD_EMBED_UA && imageType) ||
     request.url.includes("debug")
